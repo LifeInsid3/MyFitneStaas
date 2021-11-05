@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_info"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_below="@+id/scode_profile"
+        android:layout_marginTop="215dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="262dp"
+            android:layout_height="183dp"
+            android:layout_marginStart="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="О занятии"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/info_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Иванов Иван"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/abc_vector_test" />
+
+    <TextView
+        android:id="@+id/scode_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profile_image"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:text="" />
+
+    <RelativeLayout
+        android:id="@+id/relative_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scode_profile"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Имя"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/name_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Иванов Иван"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_name"
+        android:paddingVertical="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Телефон"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/phone_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+7 (999) 999-99-99"
+                android:textColor="@color/black"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relative_phone"
+        android:background="@color/purple_200" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relative_phone"
+        android:layout_marginTop="73dp"
+        android:background="@color/purple_200" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/relative_name"
+        android:background="@color/purple_200" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative_house_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:layout_below="@id/relative_phone"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="70dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зал"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/country_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Россия"
+                android:textSize="26sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
